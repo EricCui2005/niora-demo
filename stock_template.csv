@@ -1,0 +1,143 @@
+drug_name,quantity,reorder_level,strength,dosage_form,unit_of_measure,reorder_quantity,location,batch_number,expiry_date,notes
+Paracetamol,1000,80.0,500mg,Tablet,units,300.0,Shelf B9,BATCH001,2025-12-31,Sample entry
+Amoxicillin,2000,50.0,500mg,,units,100.0,Shelf A2,BATCH002,2026-01-15,
+Ibuprofen,4882,50.0,200mg,Tablet,units,165.0,Shelf B3,BATCH103,2028-05-15,Auto-generated sample data
+Ciprofloxacin,3385,124.0,500mg,Tablet,units,824.0,Shelf B4,BATCH104,2028-07-08,Auto-generated sample data
+Metformin,3883,265.0,850mg,Tablet,units,187.0,Shelf B5,BATCH105,2027-10-01,Auto-generated sample data
+Insulin Glargine,2466,189.0,100IU/ml,Injection,units,771.0,Shelf B6,BATCH106,2028-02-29,Auto-generated sample data
+Artemether-Lumefantrine,4142,170.0,20/120mg,Tablet,units,328.0,Shelf B7,BATCH107,2026-11-18,Auto-generated sample data
+Azithromycin,4334,83.0,250mg,Tablet,units,924.0,Shelf B8,BATCH108,2027-02-14,Auto-generated sample data
+Ceftriaxone,4828,79.0,1g,Injection,units,118.0,Shelf B9,BATCH109,2028-05-13,Auto-generated sample data
+Omeprazole,2131,261.0,20mg,Capsule,units,889.0,Shelf B10,BATCH110,2027-12-06,Auto-generated sample data
+Salbutamol,4689,225.0,100mcg,Inhaler,units,539.0,Shelf B11,BATCH111,2026-08-01,Auto-generated sample data
+Amlodipine,4994,165.0,5mg,Tablet,units,666.0,Shelf B12,BATCH112,2027-04-21,Auto-generated sample data
+Losartan,3585,76.0,50mg,Tablet,units,793.0,Shelf B13,BATCH113,2027-04-28,Auto-generated sample data
+Gentamicin,3874,267.0,80mg/2ml,Injection,units,303.0,Shelf B14,BATCH114,2027-07-03,Auto-generated sample data
+Doxycycline,2658,291.0,100mg,Capsule,units,802.0,Shelf B15,BATCH115,2027-07-12,Auto-generated sample data
+Morphine,4037,122.0,10mg/ml,Injection,units,450.0,Shelf B16,BATCH116,2028-04-17,Auto-generated sample data
+Heparin,3923,250.0,5000IU/ml,Injection,units,927.0,Shelf B17,BATCH117,2027-06-24,Auto-generated sample data
+Diazepam,456,166.0,10mg,Tablet,units,1313.0,Shelf C18,BATCHX1018,2028-03-05,Auto-generated sample data
+Prednisolone,2423,101.0,5mg,Tablet,units,205.0,Shelf C19,BATCHX1019,2028-04-30,Auto-generated sample data
+Loperamide,1994,196.0,2mg,Capsule,units,1451.0,Shelf C20,BATCHX1020,2027-10-21,Auto-generated sample data
+Tranexamic Acid,5370,255.0,500mg,Injection,units,528.0,Shelf C21,BATCHX1021,2027-06-08,Auto-generated sample data
+Imipenem,80,377.0,500mg,Injection,units,630.0,Shelf C22,BATCHX1022,2027-05-31,Auto-generated sample data
+Cloxacillin,5571,234.0,500mg,Capsule,units,1266.0,Shelf C23,BATCHX1023,2026-11-18,Auto-generated sample data
+Piperacillin-Tazobactam,4849,117.0,4.5g,Injection,units,338.0,Shelf C24,BATCHX1024,2026-06-28,Auto-generated sample data
+Ethambutol,2980,108.0,400mg,Tablet,units,1488.0,Shelf C25,BATCHX1025,2028-05-12,Auto-generated sample data
+Co-trimoxazole,607,143.0,960mg,Tablet,units,153.0,Shelf C26,BATCHX1026,2027-02-16,Auto-generated sample data
+Famotidine,3392,209.0,20mg,Tablet,units,811.0,Shelf C27,BATCHX1027,2028-09-29,Auto-generated sample data
+Itraconazole,1466,135.0,100mg,Capsule,units,194.0,Shelf C28,BATCHX1028,2028-08-27,Auto-generated sample data
+Ranitidine,5414,142.0,150mg,Tablet,units,1090.0,Shelf C29,BATCHX1029,2027-07-26,Auto-generated sample data
+Zinc Sulfate,2697,374.0,20mg,Tablet,units,300.0,Shelf C30,BATCHX1030,2027-05-04,Auto-generated sample data
+Acetylcysteine,1709,364.0,200mg,Sachet,units,1386.0,Shelf C31,BATCHX1031,2028-08-26,Auto-generated sample data
+Ketamine,4341,178.0,50mg/ml,Injection,units,1186.0,Shelf C32,BATCHX1032,2027-09-06,Auto-generated sample data
+Tranexamic Acid,1739,322.0,500mg,Injection,units,590.0,Shelf C33,BATCHX1033,2028-10-13,Auto-generated sample data
+Linezolid,1073,85.0,600mg,Tablet,units,1074.0,Shelf C34,BATCHX1034,2028-05-01,Auto-generated sample data
+Meropenem,920,239.0,1g,Injection,units,422.0,Shelf C35,BATCHX1035,2026-11-25,Auto-generated sample data
+Ketamine,2987,145.0,50mg/ml,Injection,units,705.0,Shelf C36,BATCHX1036,2026-07-22,Auto-generated sample data
+Iron Sucrose,4638,327.0,100mg/5ml,Injection,units,511.0,Shelf C37,BATCHX1037,2027-03-08,Auto-generated sample data
+Linezolid,5380,152.0,600mg,Tablet,units,950.0,Shelf C38,BATCHX1038,2026-06-10,Auto-generated sample data
+Isoniazid,3207,324.0,300mg,Tablet,units,174.0,Shelf C39,BATCHX1039,2026-09-19,Auto-generated sample data
+Midazolam,5181,61.0,5mg/ml,Injection,units,444.0,Shelf C40,BATCHX1040,2027-06-11,Auto-generated sample data
+Povidone-Iodine,2363,104.0,10%,Solution,units,1113.0,Shelf C41,BATCHX1041,2026-09-28,Auto-generated sample data
+Clindamycin,5987,331.0,300mg,Capsule,units,956.0,Shelf C42,BATCHX1042,2028-03-23,Auto-generated sample data
+Pyrazinamide,2346,337.0,500mg,Tablet,units,933.0,Shelf C43,BATCHX1043,2027-01-08,Auto-generated sample data
+Vancomycin,106,211.0,1g,Injection,units,278.0,Shelf C44,BATCHX1044,2027-12-06,Auto-generated sample data
+Domperidone,2388,381.0,10mg,Tablet,units,420.0,Shelf C45,BATCHX1045,2028-05-20,Auto-generated sample data
+Furosemide,2219,269.0,40mg,Tablet,units,506.0,Shelf C46,BATCHX1046,2029-04-15,Auto-generated sample data
+Rifampicin,2718,390.0,600mg,Capsule,units,423.0,Shelf C47,BATCHX1047,2029-02-12,Auto-generated sample data
+Povidone-Iodine,4259,248.0,10%,Solution,units,1011.0,Shelf C48,BATCHX1048,2026-11-19,Auto-generated sample data
+Piperacillin-Tazobactam,1094,67.0,4.5g,Injection,units,600.0,Shelf C49,BATCHX1049,2028-07-15,Auto-generated sample data
+Fluconazole,392,201.0,200mg,Capsule,units,1492.0,Shelf C50,BATCHX1050,2026-08-06,Auto-generated sample data
+Povidone-Iodine,4442,142.0,10%,Solution,units,848.0,Shelf C51,BATCHX1051,2028-09-10,Auto-generated sample data
+Levofloxacin,5684,175.0,500mg,Tablet,units,390.0,Shelf C52,BATCHX1052,2028-08-10,Auto-generated sample data
+Lisinopril,1822,388.0,10mg,Tablet,units,172.0,Shelf C53,BATCHX1053,2028-08-10,Auto-generated sample data
+Iron Sucrose,2941,119.0,100mg/5ml,Injection,units,571.0,Shelf C54,BATCHX1054,2027-03-03,Auto-generated sample data
+Furosemide,188,147.0,40mg,Tablet,units,761.0,Shelf C55,BATCHX1055,2027-06-24,Auto-generated sample data
+ORS,3206,394.0,Standard,Sachet,units,451.0,Shelf C56,BATCHX1056,2027-01-08,Auto-generated sample data
+Hydrocortisone,3899,95.0,100mg,Injection,units,650.0,Shelf C57,BATCHX1057,2027-09-09,Auto-generated sample data
+Budesonide,111,173.0,200mcg,Inhaler,units,1273.0,Shelf C58,BATCHX1058,2026-11-02,Auto-generated sample data
+Ondansetron,2669,94.0,4mg,Tablet,units,1408.0,Shelf C59,BATCHX1059,2028-10-16,Auto-generated sample data
+Meropenem,5398,389.0,1g,Injection,units,1022.0,Shelf C60,BATCHX1060,2026-12-03,Auto-generated sample data
+Folic Acid,1876,55.0,5mg,Tablet,units,1231.0,Shelf C61,BATCHX1061,2027-03-20,Auto-generated sample data
+Cefixime,1696,367.0,200mg,Tablet,units,989.0,Shelf C62,BATCHX1062,2026-08-04,Auto-generated sample data
+Acetylcysteine,3873,213.0,200mg,Sachet,units,1099.0,Shelf C63,BATCHX1063,2028-10-29,Auto-generated sample data
+Povidone-Iodine,84,323.0,10%,Solution,units,1082.0,Shelf C64,BATCHX1064,2028-04-30,Auto-generated sample data
+Hydrochlorothiazide,99,362.0,25mg,Tablet,units,593.0,Shelf C65,BATCHX1065,2028-05-28,Auto-generated sample data
+Linezolid,3779,85.0,600mg,Tablet,units,1362.0,Shelf C66,BATCHX1066,2028-11-14,Auto-generated sample data
+Tranexamic Acid,5682,90.0,500mg,Injection,units,1217.0,Shelf C67,BATCHX1067,2028-03-07,Auto-generated sample data
+Tenofovir,7141,118.0,300mg,Tablet,units,1332.0,Shelf D68,BATCHY2068,2028-09-12,Auto-generated sample data
+Teicoplanin,5376,115.0,400mg,Injection,units,1603.0,Shelf D69,BATCHY2069,2027-08-06,Auto-generated sample data
+Colistin,1261,194.0,1MIU,Injection,units,1961.0,Shelf D70,BATCHY2070,2028-07-04,Auto-generated sample data
+Potassium Chloride,7024,71.0,15%,Injection,units,1639.0,Shelf D71,BATCHY2071,2030-02-20,Auto-generated sample data
+Efavirenz,3278,379.0,600mg,Tablet,units,916.0,Shelf D72,BATCHY2072,2026-12-08,Auto-generated sample data
+Phenytoin,2649,289.0,100mg,Capsule,units,1701.0,Shelf D73,BATCHY2073,2027-06-22,Auto-generated sample data
+Levetiracetam,7268,376.0,500mg,Tablet,units,1984.0,Shelf D74,BATCHY2074,2027-05-01,Auto-generated sample data
+Potassium Chloride,7229,227.0,15%,Injection,units,1475.0,Shelf D75,BATCHY2075,2029-11-30,Auto-generated sample data
+Glibenclamide,6522,434.0,5mg,Tablet,units,911.0,Shelf D76,BATCHY2076,2029-07-23,Auto-generated sample data
+Spironolactone,5330,265.0,25mg,Tablet,units,193.0,Shelf D77,BATCHY2077,2026-11-25,Auto-generated sample data
+Allopurinol,3212,189.0,300mg,Tablet,units,1400.0,Shelf D78,BATCHY2078,2029-05-20,Auto-generated sample data
+Risperidone,6594,246.0,2mg,Tablet,units,1148.0,Shelf D79,BATCHY2079,2029-01-23,Auto-generated sample data
+Olanzapine,151,180.0,10mg,Tablet,units,1634.0,Shelf D80,BATCHY2080,2028-04-20,Auto-generated sample data
+Nitrofurantoin,7111,391.0,100mg,Capsule,units,394.0,Shelf D81,BATCHY2081,2027-06-22,Auto-generated sample data
+Sertraline,2863,155.0,50mg,Tablet,units,1010.0,Shelf D82,BATCHY2082,2027-08-25,Auto-generated sample data
+Ribavirin,3013,466.0,200mg,Capsule,units,1188.0,Shelf D83,BATCHY2083,2030-02-19,Auto-generated sample data
+Spironolactone,5547,338.0,25mg,Tablet,units,1883.0,Shelf D84,BATCHY2084,2027-01-31,Auto-generated sample data
+Sitagliptin,6981,264.0,100mg,Tablet,units,1902.0,Shelf D85,BATCHY2085,2028-10-08,Auto-generated sample data
+Lamivudine,5662,243.0,150mg,Tablet,units,1841.0,Shelf D86,BATCHY2086,2029-01-05,Auto-generated sample data
+Citalopram,5561,356.0,20mg,Tablet,units,1948.0,Shelf D87,BATCHY2087,2027-07-17,Auto-generated sample data
+Dextrose,5848,174.0,5%,IV Fluid,units,1773.0,Shelf D88,BATCHY2088,2026-09-18,Auto-generated sample data
+Escitalopram,1500,161.0,10mg,Tablet,units,1872.0,Shelf D89,BATCHY2089,2027-08-05,Auto-generated sample data
+Levetiracetam,7119,405.0,500mg,Tablet,units,1444.0,Shelf D90,BATCHY2090,2029-02-13,Auto-generated sample data
+Spironolactone,2482,305.0,25mg,Tablet,units,840.0,Shelf D91,BATCHY2091,2027-03-29,Auto-generated sample data
+Haloperidol,1404,418.0,5mg,Tablet,units,1750.0,Shelf D92,BATCHY2092,2029-01-20,Auto-generated sample data
+Erythromycin,1189,314.0,250mg,Tablet,units,1722.0,Shelf D93,BATCHY2093,2028-06-25,Auto-generated sample data
+Potassium Chloride,2091,135.0,15%,Injection,units,523.0,Shelf D94,BATCHY2094,2026-10-23,Auto-generated sample data
+Efavirenz,709,187.0,600mg,Tablet,units,222.0,Shelf D95,BATCHY2095,2028-04-01,Auto-generated sample data
+Methotrexate,4078,235.0,2.5mg,Tablet,units,1614.0,Shelf D96,BATCHY2096,2029-09-24,Auto-generated sample data
+Clopidogrel,1095,481.0,75mg,Tablet,units,1451.0,Shelf D97,BATCHY2097,2028-09-12,Auto-generated sample data
+Febuxostat,4935,386.0,40mg,Tablet,units,1399.0,Shelf D98,BATCHY2098,2027-02-08,Auto-generated sample data
+Sulfasalazine,1770,366.0,500mg,Tablet,units,1691.0,Shelf D99,BATCHY2099,2027-03-12,Auto-generated sample data
+Ringer’s Lactate,519,211.0,Standard,IV Fluid,units,939.0,Shelf D100,BATCHY2100,2028-02-20,Auto-generated sample data
+Levothyroxine,1406,425.0,100mcg,Tablet,units,1827.0,Shelf D101,BATCHY2101,2026-06-13,Auto-generated sample data
+Sitagliptin,579,208.0,100mg,Tablet,units,1214.0,Shelf D102,BATCHY2102,2026-05-17,Auto-generated sample data
+Erythromycin,5726,60.0,250mg,Tablet,units,895.0,Shelf D103,BATCHY2103,2028-07-27,Auto-generated sample data
+Clopidogrel,3214,368.0,75mg,Tablet,units,717.0,Shelf D104,BATCHY2104,2027-03-11,Auto-generated sample data
+Parenteral Nutrition,1231,333.0,Standard,IV Fluid,units,1526.0,Shelf D105,BATCHY2105,2029-02-16,Auto-generated sample data
+Levothyroxine,4095,141.0,100mcg,Tablet,units,1551.0,Shelf D106,BATCHY2106,2027-07-21,Auto-generated sample data
+Colistin,67,261.0,1MIU,Injection,units,1709.0,Shelf D107,BATCHY2107,2026-08-24,Auto-generated sample data
+Haloperidol,2971,249.0,5mg,Tablet,units,682.0,Shelf D108,BATCHY2108,2029-03-11,Auto-generated sample data
+Oseltamivir,1999,153.0,75mg,Capsule,units,885.0,Shelf D109,BATCHY2109,2027-12-01,Auto-generated sample data
+Spironolactone,2339,358.0,25mg,Tablet,units,1143.0,Shelf D110,BATCHY2110,2028-08-17,Auto-generated sample data
+Normal Saline,4050,110.0,0.9%,IV Fluid,units,1082.0,Shelf D111,BATCHY2111,2026-11-25,Auto-generated sample data
+Allopurinol,7055,170.0,300mg,Tablet,units,772.0,Shelf D112,BATCHY2112,2029-06-03,Auto-generated sample data
+Propranolol,5921,241.0,40mg,Tablet,units,1536.0,Shelf D113,BATCHY2113,2027-02-28,Auto-generated sample data
+Clarithromycin,2976,77.0,500mg,Tablet,units,1722.0,Shelf D114,BATCHY2114,2026-09-23,Auto-generated sample data
+Insulin Regular,2495,131.0,100IU/ml,Injection,units,1162.0,Shelf D115,BATCHY2115,2028-02-12,Auto-generated sample data
+Dolutegravir,1485,483.0,50mg,Tablet,units,1504.0,Shelf D116,BATCHY2116,2027-05-18,Auto-generated sample data
+Teicoplanin,4518,175.0,400mg,Injection,units,556.0,Shelf D117,BATCHY2117,2026-08-22,Auto-generated sample data
+Digoxin,356,109.0,0.25mg,Tablet,units,1275.0,Shelf D118,BATCHY2118,2026-08-23,Auto-generated sample data
+Normal Saline,272,406.0,0.9%,IV Fluid,units,1631.0,Shelf D119,BATCHY2119,2027-01-16,Auto-generated sample data
+Ringer’s Lactate,2550,380.0,Standard,IV Fluid,units,1752.0,Shelf D120,BATCHY2120,2029-07-06,Auto-generated sample data
+Escitalopram,7759,360.0,10mg,Tablet,units,1734.0,Shelf D121,BATCHY2121,2029-03-23,Auto-generated sample data
+Ringer’s Lactate,6160,162.0,Standard,IV Fluid,units,1315.0,Shelf D122,BATCHY2122,2026-08-09,Auto-generated sample data
+Aspirin,1031,99.0,75mg,Tablet,units,585.0,Shelf D123,BATCHY2123,2028-04-24,Auto-generated sample data
+Olanzapine,2273,441.0,10mg,Tablet,units,1148.0,Shelf D124,BATCHY2124,2026-10-26,Auto-generated sample data
+Allopurinol,3121,64.0,300mg,Tablet,units,1168.0,Shelf D125,BATCHY2125,2026-10-23,Auto-generated sample data
+Colchicine,4760,403.0,0.6mg,Tablet,units,662.0,Shelf D126,BATCHY2126,2028-05-07,Auto-generated sample data
+Amitriptyline,602,234.0,25mg,Tablet,units,183.0,Shelf D127,BATCHY2127,2029-03-30,Auto-generated sample data
+Spironolactone,7281,407.0,25mg,Tablet,units,528.0,Shelf D128,BATCHY2128,2027-06-08,Auto-generated sample data
+Glimepiride,6517,72.0,2mg,Tablet,units,499.0,Shelf D129,BATCHY2129,2027-05-24,Auto-generated sample data
+Cyclophosphamide,1509,336.0,50mg,Tablet,units,820.0,Shelf D130,BATCHY2130,2028-01-09,Auto-generated sample data
+Haloperidol,2081,60.0,5mg,Tablet,units,581.0,Shelf D131,BATCHY2131,2028-12-17,Auto-generated sample data
+Olanzapine,3783,133.0,10mg,Tablet,units,1209.0,Shelf D132,BATCHY2132,2026-10-13,Auto-generated sample data
+Methotrexate,6017,209.0,2.5mg,Tablet,units,266.0,Shelf D133,BATCHY2133,2026-12-12,Auto-generated sample data
+Digoxin,3302,286.0,0.25mg,Tablet,units,404.0,Shelf D134,BATCHY2134,2029-11-26,Auto-generated sample data
+Insulin Lispro,3291,438.0,100IU/ml,Injection,units,1408.0,Shelf D135,BATCHY2135,2026-04-22,Auto-generated sample data
+Potassium Chloride,5379,454.0,15%,Injection,units,1047.0,Shelf D136,BATCHY2136,2029-02-27,Auto-generated sample data
+Erythromycin,6702,92.0,250mg,Tablet,units,1932.0,Shelf D137,BATCHY2137,2027-05-11,Auto-generated sample data
+Ribavirin,3167,307.0,200mg,Capsule,units,1758.0,Shelf D138,BATCHY2138,2029-05-04,Auto-generated sample data
+Colistin,7870,245.0,1MIU,Injection,units,1257.0,Shelf D139,BATCHY2139,2029-09-07,Auto-generated sample data
+Ringer’s Lactate,172,349.0,Standard,IV Fluid,units,464.0,Shelf D140,BATCHY2140,2027-10-03,Auto-generated sample data
+Glimepiride,159,489.0,2mg,Tablet,units,1629.0,Shelf D141,BATCHY2141,2026-12-15,Auto-generated sample data
+Citalopram,6108,212.0,20mg,Tablet,units,1113.0,Shelf D142,BATCHY2142,2029-12-30,Auto-generated sample data
