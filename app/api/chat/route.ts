@@ -27,7 +27,8 @@ export async function POST(request: NextRequest) {
     const client = new AzureOpenAI({
       endpoint,
       apiKey,
-      apiVersion: "2024-02-15-preview",
+      apiVersion: "2025-04-01-preview",
+      deployment,
     });
 
     const stockData = loadStockData();
@@ -60,8 +61,7 @@ Provide clear, actionable insights. Use tables when helpful.`;
     const response = await client.chat.completions.create({
       model: deployment,
       messages: [{ role: "system", content: systemPrompt }, ...messages],
-      temperature: 0.3,
-      max_tokens: 1000,
+      max_completion_tokens: 1000,
     });
 
     const assistantMessage = response.choices[0]?.message?.content || "";
