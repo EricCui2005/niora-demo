@@ -71,7 +71,7 @@ export default function StockTable() {
           ) : (
             <table className="min-w-full text-sm">
               <thead>
-                <tr className="bg-gray-50">
+                <tr className="bg-emerald-50">
                   <th className="px-3 py-2 text-left font-medium text-gray-600">
                     Drug Name
                   </th>
@@ -95,13 +95,13 @@ export default function StockTable() {
                   </th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="text-gray-700">
                 {stockData.map((item, index) => (
                   <tr
                     key={index}
-                    className={`border-t border-gray-100 ${
+                    className={`border-t border-gray-100 hover:bg-gray-50 transition-colors ${
                       item.quantity <= item.reorder_level
-                        ? "bg-red-50"
+                        ? "bg-red-50 hover:bg-red-100"
                         : ""
                     }`}
                   >

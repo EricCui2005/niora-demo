@@ -104,7 +104,7 @@ export default function ProcurementChat() {
                   <div
                     className={`max-w-[80%] rounded-lg px-4 py-2 ${
                       message.role === "user"
-                        ? "bg-blue-600 text-white"
+                        ? "bg-emerald-600 text-white"
                         : "bg-white border border-gray-200 text-gray-800"
                     }`}
                   >
@@ -154,13 +154,13 @@ export default function ProcurementChat() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Ask about procurement..."
-              className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
               disabled={isLoading}
             />
             <button
               type="submit"
               disabled={isLoading || !input.trim()}
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
+              className="px-4 py-2 bg-emerald-600 text-white rounded-lg font-medium hover:bg-emerald-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors shadow-sm"
             >
               Send
             </button>

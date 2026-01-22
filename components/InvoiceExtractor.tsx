@@ -81,7 +81,7 @@ export default function InvoiceExtractor() {
 
       <div className="flex items-center gap-4">
         <label className="flex-1">
-          <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center cursor-pointer hover:border-blue-400 transition-colors">
+          <div className="border-2 border-dashed border-gray-300 rounded-xl p-6 text-center cursor-pointer hover:border-emerald-400 hover:bg-emerald-50/50 transition-colors">
             <input
               type="file"
               accept=".pdf"
@@ -121,7 +121,7 @@ export default function InvoiceExtractor() {
         <button
           onClick={handleExtract}
           disabled={isLoading}
-          className="px-6 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 disabled:bg-blue-400 disabled:cursor-not-allowed transition-colors"
+          className="px-6 py-2.5 bg-emerald-600 text-white rounded-lg font-medium hover:bg-emerald-700 disabled:bg-emerald-400 disabled:cursor-not-allowed transition-colors shadow-sm"
         >
           {isLoading ? (
             <span className="flex items-center gap-2">
@@ -158,7 +158,7 @@ export default function InvoiceExtractor() {
       {invoiceData && (
         <div className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-gray-50 p-4 rounded-lg">
+            <div className="bg-emerald-50/50 p-4 rounded-lg border border-emerald-100">
               <h3 className="font-semibold text-gray-800 mb-3">
                 Supplier Information
               </h3>
@@ -182,7 +182,7 @@ export default function InvoiceExtractor() {
               </div>
             </div>
 
-            <div className="bg-gray-50 p-4 rounded-lg">
+            <div className="bg-emerald-50/50 p-4 rounded-lg border border-emerald-100">
               <h3 className="font-semibold text-gray-800 mb-3">
                 Customer Information
               </h3>
@@ -207,8 +207,8 @@ export default function InvoiceExtractor() {
             <div>
               <h3 className="font-semibold text-gray-800 mb-3">Line Items</h3>
               <div className="overflow-x-auto">
-                <table className="min-w-full text-sm border border-gray-200 rounded-lg">
-                  <thead className="bg-gray-50">
+                <table className="min-w-full text-sm border border-gray-200 rounded-lg overflow-hidden">
+                  <thead className="bg-emerald-50">
                     <tr>
                       <th className="px-4 py-2 text-left font-medium text-gray-600">
                         Description
@@ -254,9 +254,9 @@ export default function InvoiceExtractor() {
                   {invoiceData.tax || "N/A"}
                 </p>
               </div>
-              <div className="bg-blue-50 p-4 rounded-lg text-center">
-                <p className="text-sm text-blue-600">Total</p>
-                <p className="text-xl font-bold text-blue-700">
+              <div className="bg-emerald-50 p-4 rounded-lg text-center border border-emerald-200">
+                <p className="text-sm text-emerald-600 font-medium">Total</p>
+                <p className="text-xl font-bold text-emerald-700">
                   {invoiceData.total || "N/A"}
                 </p>
               </div>
