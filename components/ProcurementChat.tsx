@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import ReactMarkdown from "react-markdown";
 import StockTable from "./StockTable";
 
 interface Message {
@@ -108,9 +109,15 @@ export default function ProcurementChat() {
                         : "bg-white border border-gray-200 text-gray-800"
                     }`}
                   >
-                    <div className="whitespace-pre-wrap text-sm">
-                      {message.content}
-                    </div>
+                    {message.role === "user" ? (
+                      <div className="whitespace-pre-wrap text-sm">
+                        {message.content}
+                      </div>
+                    ) : (
+                      <div className="text-sm prose prose-sm prose-gray max-w-none prose-table:border prose-table:border-gray-200 prose-th:bg-gray-50 prose-th:px-2 prose-th:py-1 prose-td:px-2 prose-td:py-1 prose-td:border prose-td:border-gray-200 prose-th:border prose-th:border-gray-200">
+                        <ReactMarkdown>{message.content}</ReactMarkdown>
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
