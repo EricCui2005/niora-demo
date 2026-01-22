@@ -162,7 +162,7 @@ export default function InvoiceExtractor() {
               <h3 className="font-semibold text-gray-800 mb-3">
                 Supplier Information
               </h3>
-              <div className="space-y-2 text-sm">
+              <div className="space-y-2 text-sm text-gray-700">
                 <p>
                   <span className="font-medium">Vendor:</span>{" "}
                   {invoiceData.vendor.name || "N/A"}
@@ -186,7 +186,7 @@ export default function InvoiceExtractor() {
               <h3 className="font-semibold text-gray-800 mb-3">
                 Customer Information
               </h3>
-              <div className="space-y-2 text-sm">
+              <div className="space-y-2 text-sm text-gray-700">
                 <p>
                   <span className="font-medium">Customer:</span>{" "}
                   {invoiceData.customer.name || "N/A"}
@@ -224,7 +224,7 @@ export default function InvoiceExtractor() {
                       </th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody className="text-gray-700">
                     {invoiceData.items.map((item, index) => (
                       <tr key={index} className="border-t border-gray-200">
                         <td className="px-4 py-2">{item.description || "-"}</td>
