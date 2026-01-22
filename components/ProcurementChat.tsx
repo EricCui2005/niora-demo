@@ -154,7 +154,7 @@ export default function ProcurementChat() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Ask about procurement..."
-              className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+              className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-gray-700"
               disabled={isLoading}
             />
             <button
