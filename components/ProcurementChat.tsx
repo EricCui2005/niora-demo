@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import StockTable from "./StockTable";
+import EmeraldWave from "./EmeraldWave";
 
 interface Message {
   role: "user" | "assistant";
@@ -123,29 +124,11 @@ export default function ProcurementChat() {
               ))}
               {isLoading && (
                 <div className="flex justify-start">
-                  <div className="bg-white border border-gray-200 rounded-lg px-4 py-2">
-                    <div className="flex items-center gap-2 text-gray-500">
-                      <svg
-                        className="animate-spin h-4 w-4"
-                        viewBox="0 0 24 24"
-                      >
-                        <circle
-                          className="opacity-25"
-                          cx="12"
-                          cy="12"
-                          r="10"
-                          stroke="currentColor"
-                          strokeWidth="4"
-                          fill="none"
-                        />
-                        <path
-                          className="opacity-75"
-                          fill="currentColor"
-                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                        />
-                      </svg>
+                  <div className="bg-white border border-emerald-200 rounded-lg overflow-hidden min-w-[200px]">
+                    <div className="text-center text-sm text-emerald-700 pt-2 font-medium">
                       Thinking...
                     </div>
+                    <EmeraldWave />
                   </div>
                 </div>
               )}

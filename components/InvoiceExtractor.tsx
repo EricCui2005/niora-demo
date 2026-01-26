@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import EmeraldWave from "./EmeraldWave";
 
 interface InvoiceItem {
   description: string;
@@ -118,35 +119,23 @@ export default function InvoiceExtractor() {
       </div>
 
       {file && (
-        <button
-          onClick={handleExtract}
-          disabled={isLoading}
-          className="px-6 py-2.5 bg-emerald-600 text-white rounded-lg font-medium hover:bg-emerald-700 disabled:bg-emerald-400 disabled:cursor-not-allowed transition-colors shadow-sm"
-        >
-          {isLoading ? (
-            <span className="flex items-center gap-2">
-              <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24">
-                <circle
-                  className="opacity-25"
-                  cx="12"
-                  cy="12"
-                  r="10"
-                  stroke="currentColor"
-                  strokeWidth="4"
-                  fill="none"
-                />
-                <path
-                  className="opacity-75"
-                  fill="currentColor"
-                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                />
-              </svg>
-              Analyzing invoice...
-            </span>
-          ) : (
-            "Extract Invoice Data"
+        <div className="space-y-4">
+          <button
+            onClick={handleExtract}
+            disabled={isLoading}
+            className="px-6 py-2.5 bg-emerald-600 text-white rounded-lg font-medium hover:bg-emerald-700 disabled:bg-emerald-400 disabled:cursor-not-allowed transition-colors shadow-sm"
+          >
+            {isLoading ? "Analyzing invoice..." : "Extract Invoice Data"}
+          </button>
+          {isLoading && (
+            <div className="rounded-lg overflow-hidden border border-emerald-200 bg-emerald-50/50">
+              <div className="text-center text-sm text-emerald-700 pt-3 font-medium">
+                Processing with Azure AI...
+              </div>
+              <EmeraldWave />
+            </div>
           )}
-        </button>
+        </div>
       )}
 
       {error && (
