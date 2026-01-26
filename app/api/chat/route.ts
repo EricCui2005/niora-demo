@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { AzureOpenAI } from "openai";
 import { loadStockData, stockToCSV } from "@/lib/stock";
+import { getUploadedCSV } from "@/lib/csv-store";
 
 export async function POST(request: NextRequest) {
   try {
@@ -31,29 +32,26 @@ export async function POST(request: NextRequest) {
       deployment,
     });
 
-    const stockData = loadStockData();
+    const uploadedCSV = getUploadedCSV();
+
+    if (!uploadedCSV) {
+      return NextResponse.json(
+        { error: "No CSV data uploaded. Please upload a CSV file first." },
+        { status: 400 }
+      );
+    }
+
+    const stockData = loadStockData(uploadedCSV);
     const stockCSV = stockToCSV(stockData);
     const today = new Date().toISOString().split("T")[0];
 
-    const systemPrompt = `You are a procurement decision support assistant for a hospital pharmacy.
-You help analyze drug inventory data and provide insights for procurement decisions.
+    const systemPrompt = `You are a procurement decision support assistant.
+You help analyze inventory data and provide insights for procurement decisions.
 
 Here is the current stock data (CSV format):
 ${stockCSV}
 
-Key columns:
-- drug_name: Name of the drug
-- quantity: Current stock quantity
-- reorder_level: Minimum stock level before reorder is needed
-- strength: Drug strength/dosage
-- dosage_form: Form (Tablet, Injection, etc.)
-- reorder_quantity: Standard reorder amount
-- location: Storage location
-- batch_number: Batch identifier
-- expiry_date: Expiration date (YYYY-MM-DD format)
-
-When analyzing stockout risk, compare quantity to reorder_level.
-A drug is at risk if quantity <= reorder_level.
+The CSV columns represent various aspects of the inventory. Analyze the data based on the column headers provided.
 Today's date is ${today}.
 
 Provide clear, actionable insights. Use tables when helpful.`;

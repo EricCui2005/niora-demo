@@ -68,31 +68,23 @@ export default function StockTable() {
         <div className="border-t border-gray-200 p-4 overflow-x-auto">
           {isLoading ? (
             <div className="text-center py-4 text-gray-500">Loading...</div>
+          ) : stockData.length === 0 ? (
+            <div className="text-center py-8 text-gray-500">
+              <p className="mb-1">No data available</p>
+              <p className="text-sm">Please upload a CSV file to view stock data</p>
+            </div>
           ) : (
             <table className="min-w-full text-sm">
               <thead>
                 <tr className="bg-emerald-50">
-                  <th className="px-3 py-2 text-left font-medium text-gray-600">
-                    Drug Name
-                  </th>
-                  <th className="px-3 py-2 text-left font-medium text-gray-600">
-                    Quantity
-                  </th>
-                  <th className="px-3 py-2 text-left font-medium text-gray-600">
-                    Reorder Level
-                  </th>
-                  <th className="px-3 py-2 text-left font-medium text-gray-600">
-                    Strength
-                  </th>
-                  <th className="px-3 py-2 text-left font-medium text-gray-600">
-                    Form
-                  </th>
-                  <th className="px-3 py-2 text-left font-medium text-gray-600">
-                    Location
-                  </th>
-                  <th className="px-3 py-2 text-left font-medium text-gray-600">
-                    Expiry Date
-                  </th>
+                  {Object.keys(stockData[0]).map((key) => (
+                    <th
+                      key={key}
+                      className="px-3 py-2 text-left font-medium text-gray-600"
+                    >
+                      {key.split("_").map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(" ")}
+                    </th>
+                  ))}
                 </tr>
               </thead>
               <tbody className="text-gray-700">
@@ -105,13 +97,11 @@ export default function StockTable() {
                         : ""
                     }`}
                   >
-                    <td className="px-3 py-2">{item.drug_name}</td>
-                    <td className="px-3 py-2">{item.quantity}</td>
-                    <td className="px-3 py-2">{item.reorder_level}</td>
-                    <td className="px-3 py-2">{item.strength}</td>
-                    <td className="px-3 py-2">{item.dosage_form}</td>
-                    <td className="px-3 py-2">{item.location}</td>
-                    <td className="px-3 py-2">{item.expiry_date}</td>
+                    {Object.values(item).map((value, idx) => (
+                      <td key={idx} className="px-3 py-2">
+                        {String(value)}
+                      </td>
+                    ))}
                   </tr>
                 ))}
               </tbody>

@@ -14,6 +14,10 @@ export default function ProcurementChat() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [csvFile, setCsvFile] = useState<File | null>(null);
+  const [isUploading, setIsUploading] = useState(false);
+  const [uploadStatus, setUploadStatus] = useState<string | null>(null);
+  const [stockTableKey, setStockTableKey] = useState(0);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
@@ -69,6 +73,45 @@ export default function ProcurementChat() {
     setMessages([]);
   };
 
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const selectedFile = e.target.files?.[0];
+    if (selectedFile) {
+      setCsvFile(selectedFile);
+      setUploadStatus(null);
+    }
+  };
+
+  const handleUploadCSV = async () => {
+    if (!csvFile) return;
+
+    setIsUploading(true);
+    setUploadStatus(null);
+
+    try {
+      const formData = new FormData();
+      formData.append("file", csvFile);
+
+      const response = await fetch("/api/upload-csv", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to upload CSV");
+      }
+
+      setUploadStatus(`CSV uploaded successfully: ${csvFile.name}`);
+      setMessages([]);
+      setStockTableKey((prev) => prev + 1);
+    } catch (error) {
+      setUploadStatus(`Error: ${(error as Error).message}`);
+    } finally {
+      setIsUploading(false);
+    }
+  };
+
   return (
     <div className="space-y-6">
       <div>
@@ -80,7 +123,60 @@ export default function ProcurementChat() {
         </p>
       </div>
 
-      <StockTable />
+      <div className="bg-emerald-50/50 border border-emerald-200 rounded-lg p-4">
+        <h3 className="font-medium text-gray-800 mb-1 text-sm">
+          Upload Your CSV Data
+        </h3>
+        <p className="text-xs text-gray-600 mb-3">
+          Upload a CSV file to start analyzing your data
+        </p>
+        <div className="flex items-center gap-3">
+          <label className="flex-1">
+            <div className="border-2 border-dashed border-emerald-300 rounded-lg p-4 text-center cursor-pointer hover:border-emerald-400 hover:bg-emerald-50 transition-colors">
+              <input
+                type="file"
+                accept=".csv"
+                onChange={handleFileChange}
+                className="hidden"
+              />
+              {csvFile ? (
+                <div className="text-gray-700 text-sm">
+                  <span className="font-medium">{csvFile.name}</span>
+                  <span className="text-gray-500 ml-2">
+                    ({(csvFile.size / 1024).toFixed(1)} KB)
+                  </span>
+                </div>
+              ) : (
+                <div className="text-gray-500 text-sm">
+                  Click to upload CSV file
+                </div>
+              )}
+            </div>
+          </label>
+          {csvFile && (
+            <button
+              onClick={handleUploadCSV}
+              disabled={isUploading}
+              className="px-4 py-2 bg-emerald-600 text-white rounded-lg font-medium hover:bg-emerald-700 disabled:bg-emerald-400 disabled:cursor-not-allowed transition-colors shadow-sm text-sm"
+            >
+              {isUploading ? "Uploading..." : "Upload"}
+            </button>
+          )}
+        </div>
+        {uploadStatus && (
+          <div
+            className={`mt-3 p-2 rounded text-sm ${
+              uploadStatus.startsWith("Error")
+                ? "bg-red-50 text-red-700 border border-red-200"
+                : "bg-emerald-50 text-emerald-700 border border-emerald-200"
+            }`}
+          >
+            {uploadStatus}
+          </div>
+        )}
+      </div>
+
+      <StockTable key={stockTableKey} />
 
       <div className="border border-gray-200 rounded-lg overflow-hidden">
         <div className="h-96 overflow-y-auto p-4 bg-gray-50">
@@ -89,8 +185,7 @@ export default function ProcurementChat() {
               <div className="text-center">
                 <p className="mb-2">No messages yet</p>
                 <p className="text-sm">
-                  Try asking: &quot;What drugs are at risk of stocking out?&quot; or
-                  &quot;Which items expire soon?&quot;
+                  Upload a CSV file above, then ask questions about your data
                 </p>
               </div>
             </div>

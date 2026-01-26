@@ -1,6 +1,3 @@
-import { readFileSync } from "fs";
-import { join } from "path";
-
 export interface StockItem {
   drug_name: string;
   quantity: number;
@@ -15,12 +12,13 @@ export interface StockItem {
   notes: string;
 }
 
-export function loadStockData(): StockItem[] {
-  const csvPath = join(process.cwd(), "stock_template.csv");
-  const csvContent = readFileSync(csvPath, "utf-8");
+export function loadStockData(csvContent?: string | null): StockItem[] {
+  if (!csvContent) {
+    return [];
+  }
 
   const lines = csvContent.trim().split("\n");
-  const headers = lines[0].split(",");
+  const headers = lines[0].split(",").map(h => h.trim());
 
   return lines.slice(1).map((line) => {
     const values = parseCSVLine(line);
