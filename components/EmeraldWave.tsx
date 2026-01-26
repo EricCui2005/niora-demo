@@ -3,12 +3,12 @@
 export default function EmeraldWave() {
   return (
     <div className="relative w-full h-16 overflow-hidden">
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="absolute inset-0 flex items-center justify-center pb-2">
         <div className="flex gap-1">
           {[...Array(5)].map((_, i) => (
             <div
               key={i}
-              className="w-2 h-8 rounded-full bg-gradient-to-t from-emerald-600 to-emerald-400 animate-wave"
+              className="w-2 h-6 rounded-full bg-gradient-to-t from-emerald-600 to-emerald-400 animate-wave"
               style={{
                 animationDelay: `${i * 0.15}s`,
               }}
